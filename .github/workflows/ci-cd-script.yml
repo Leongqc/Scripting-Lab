@@ -20,4 +20,4 @@ jobs:
 
     - name: Run Python Script
       run: |
-        python3 parse_failed_logins.py || echo "Skipped due to missing logs"
+        python3 login_failed.py || echo "Skipped due to missing logs"
