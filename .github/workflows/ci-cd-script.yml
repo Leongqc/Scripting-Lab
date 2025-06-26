@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-scripts:
-    runs-on: oraclelinux-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
