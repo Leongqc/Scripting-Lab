@@ -26,4 +26,4 @@ jobs:
       run: | 
          sudo apt update
          sudo apt install ansible -y
-         ansible-playbook Ansible-Learn/install_nginx.yml -i localhost, -c local
+         ansible-playbook install_nginx.yml -i localhost, -c local
