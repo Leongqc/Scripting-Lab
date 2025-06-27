@@ -21,3 +21,8 @@ jobs:
     - name: Run Python Script
       run: |
         python3 login_failed.py || echo "Skipped due to missing logs"
+
+    - name: Run Ansible Script
+      run: | 
+         sudo apt install ansible -y
+         ansible-playbook -i localhost, -c local install_nginx.yml

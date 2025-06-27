@@ -1,0 +1,16 @@
+---
+- name: Install and start NGINX on local system
+  hosts: localhost
+  become: yes
+
+  tasks:
+    - name: Install NGINX
+      package:
+        name: nginx
+        state: present
+
+    - name: Start and enable NGINX
+      service:
+        name: nginx
+        state: started
+        enabled: yes
