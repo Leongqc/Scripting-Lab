@@ -25,4 +25,4 @@ jobs:
     - name: Run Ansible Script
       run: | 
          sudo apt install ansible -y
-         ansible-playbook -i localhost, -c local install_nginx.yml
+         ansible-playbook -i localhost, -c local ./Ansible-Learn/install_nginx.yml
